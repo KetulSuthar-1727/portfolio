@@ -16,14 +16,14 @@ export default function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 rounded-2xl border border-border/80 bg-surface/50 px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal/30 hover:bg-surface/80 hover:shadow-[0_18px_50px_rgba(0,0,0,0.2)]"
+              className="flex flex-col gap-4 rounded-2xl border border-border/80 bg-surface/50 px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:border-teal/30 hover:bg-surface/80 hover:shadow-[0_18px_50px_rgba(0,0,0,0.2)] sm:flex-row sm:items-baseline sm:justify-between sm:gap-x-6 sm:gap-y-2"
             >
               <div>
                 <h3 className="font-display text-lg sm:text-xl font-semibold text-text">{ed.school}</h3>
                 <p className="text-text-muted text-sm mt-1">{ed.degree}</p>
                 <p className="text-text-faint text-xs mt-1">{ed.location}</p>
               </div>
-              <div className="text-right">
+              <div className="w-full text-left sm:ml-auto sm:w-auto sm:text-right">
                 <span className="font-mono text-xs text-teal block">
                   {ed.start} — {ed.end}
                 </span>

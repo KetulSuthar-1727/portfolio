@@ -33,7 +33,7 @@ export default function Nav() {
           }}
           className="group flex items-center gap-3 text-sm text-text"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-border/80 bg-surface/70 font-display text-[12px] font-semibold tracking-[0.2em] text-text transition-transform duration-300 group-hover:-translate-y-0.5">
+           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/20 bg-[linear-gradient(135deg,rgba(56,189,248,0.18),rgba(37,99,235,0.12),rgba(168,85,247,0.10))] font-display text-[12px] font-semibold tracking-[0.2em] text-white shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_10px_30px_rgba(56,189,248,0.18)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
             KS
           </span>
           <span className="hidden sm:block">

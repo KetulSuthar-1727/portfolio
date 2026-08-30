@@ -1,13 +1,3 @@
-/**
- * ============================================================
- *  SITE CONTENT
- * ============================================================
- *  This is the ONLY file you need to touch to update the site:
- *  add a project, tweak a skill, add a new job, etc.
- *  Every section on the page reads from here.
- * ============================================================
- */
-
 export const profile = {
   name: "Ketul Suthar",
   title: "Software Engineer",
@@ -42,15 +32,15 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs", "API Integration"],
+    items: ["Node.js", "Express.js", "REST APIs", "TypeORM"],
   },
   {
-    label: "Cloud & Deployment",
-    items: ["AWS", "Vercel"],
+    label: "Cloud & DevOps",
+    items: ["AWS","Docker", "Vercel", "Ngnix", "Git", "Github", "Gitlab", "Linux"],
   },
   {
-    label: "Tools & Platforms",
-    items: ["Git", "GitHub", "GitLab", "Linux"],
+    label: "Databases",
+    items: ["MySQL", "PostgresSQL", "Redis"],
   },
   {
     label: "Core CS",
@@ -96,6 +86,21 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    name: "ShortLink",
+    description: "A distributed URL shortener built for persistence, speed and horizontal scaling.",
+    highlights: [
+      "Built a URL-shortening service with PostgreSQL persistence, Redis caching, link expiration, click tracking and Base62 short-code generation.",
+      "Implemented Redis-based rate limiting using INCR and TTL to enforce 5 requests per 60 seconds.",
+      "Dockerized the stack and configured Nginx to load balance traffic across two API instances for horizontal scaling.",
+      "Load-tested the system with 50 concurrent virtual users, processing 1,500 requests at around 49 req/s with 0% request failures.",
+    ],
+    stack: ["Node.js", "Express.js", "PostgreSQL", "Redis", "Docker", "Nginx", "k6"],
+    links: [
+      { label: "GitHub", url: "https://github.com/KetulSuthar-1727/shortlink" },
+    ],
+    featured: true,
+  },
   {
     name: "SeaBasket",
     description: "A full-stack e-commerce platform with auth, catalog, cart and order tracking.",

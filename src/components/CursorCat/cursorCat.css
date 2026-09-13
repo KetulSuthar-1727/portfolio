@@ -1,0 +1,16 @@
+.cursor-cat {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 2147483647;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  background-image: url("/oneko.gif");
+  image-rendering: pixelated;
+  will-change: left, top;
+}
+
+@media (prefers-reduced-motion: reduce), (pointer: coarse) {
+  .cursor-cat { display: none; }
+}

@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import CursorCat from "./components/CursorCat/CursorCat";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Education from "./sections/Education";
@@ -11,6 +12,7 @@ import Skills from "./sections/Skills";
 function App() {
   return (
     <div className="bg-ink min-h-screen">
+      <CursorCat />
       <Nav />
       <main>
         <Hero />

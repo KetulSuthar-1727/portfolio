@@ -6,7 +6,7 @@ export const profile = {
   email: "ketulsuthar1727@gmail.com",
   phone: "+91 87802 21719",
   summary:
-    "I build and ship production-grade web applications end to end — from REST APIs and data models to pixel-accurate, animated interfaces. Six months deep in Next.js, TypeScript, Node.js and AWS, with a Computer Science foundation strong enough to back it up: 170+ DSA problems solved, systems thought through before they're coded.",
+    "I build and ship production-grade web applications end to end — from REST APIs and data models to pixel-accurate, animated interfaces. Six months deep in Next.js, TypeScript, Node.js and AWS, with a Computer Science foundation strong enough to back it up: 290+ DSA problems solved, systems thought through before they're coded.",
   resumeUrl: "/Ketul_Suthar_Software_Engineer.pdf",
   social: {
     github: "https://github.com/ketulsuthar",
@@ -87,6 +87,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "QuantForge",
+    description: "A quantitative backtesting and execution engine featuring a C++ order book, matching engine and Python-based strategy simulation.",
+    highlights: [
+      "Implemented a C++17 order book and matching engine, exposed to Python through pybind11.",
+      "Built a Python backtesting engine supporting moving-average and mean-reversion strategies, portfolio accounting, commissions, slippage and buy-and-hold benchmarking.",
+      "Implemented performance and risk metrics including Sharpe ratio, Sortino ratio, volatility and maximum drawdown.",
+      "Added OHLCV data validation, bounded retries, SHA-256 dataset fingerprinting, reproducibility metadata and deterministic tests.",
+      "Implemented an SQLite-backed order lifecycle with risk checks and an offline fake broker for execution simulation."
+    ],
+    stack: [
+      "C++17",
+      "Python",
+      "pybind11",
+      "SQLite",
+      "Streamlit"
+    ],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/KetulSuthar-1727/quantforge/tree/develop"
+      }
+    ],
+    featured: true
+  },
+  {
     name: "ShortLink",
     description: "A distributed URL shortener built for persistence, speed and horizontal scaling.",
     highlights: [
@@ -114,16 +139,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "PowerPlai Sports",
-    description: "A fully responsive sports platform, built and shipped solo end to end.",
-    highlights: [
-      "Designed and developed a fully responsive sports platform from scratch with React and TypeScript.",
-      "Managed the complete deployment lifecycle — production deployment on Vercel, custom domain and DNS setup, and release management.",
-    ],
-    stack: ["React", "TypeScript", "Tailwind CSS", "Vercel"],
-    featured: true,
-  },
-  {
     name: "House Price Prediction",
     description: "A regression-based ML model for predicting housing prices from real-world data.",
     highlights: [
@@ -142,8 +157,8 @@ export type Achievement = {
 
 export const achievements: Achievement[] = [
   {
-    label: "170+ DSA problems solved",
-    detail: "LeetCode contest rating of 1560, demonstrating strong problem-solving and algorithmic thinking.",
+    label: "290+ DSA problems solved",
+    detail: "LeetCode contest rating of 1800, demonstrating strong problem-solving and algorithmic thinking.",
   },
 ];
 

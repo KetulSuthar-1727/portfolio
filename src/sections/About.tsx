@@ -4,8 +4,8 @@ import { achievements, profile } from "../data/content";
 
 const stats = [
   { label: "months of production experience", value: "6+" },
-  { label: "DSA problems solved", value: "170+" },
-  { label: "LeetCode contest rating", value: "1560" },
+  { label: "DSA problems solved", value: "290+" },
+  { label: "LeetCode contest rating", value: "1800+" },
   { label: "reusable components shipped", value: "20+" },
 ];
 
@@ -29,7 +29,7 @@ export default function About() {
               TypeScript on the front, Node.js and REST APIs on the back, AWS holding it together.
             </p>
             <p>
-              Before any of that was a job, it was 170+ solved problems on LeetCode and a Computer
+              Before any of that was a job, it was 290+ solved problems on LeetCode and a Computer
               Science degree spent in data structures, operating systems and low-level design. That's
               the part that doesn't show up in a demo, but shows up in how the code is structured.
             </p>
